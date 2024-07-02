@@ -1,0 +1,329 @@
+.tutorSection {
+  background: #37012a;
+  background-image: url("./assets/Images/tutorclass.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 0rem 4rem 0rem;
+}
+.tutorBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 45%;
+  padding: 8% 4% 8% 4%;
+  /* margin: 4rem 0rem 0 -36rem; */
+  margin: auto;
+  align-items: center;
+}
+.tutorBanner > .tutorTitle {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 2.5rem;
+  color: #37012a;
+  font-weight: bold;
+}
+.tutorText {
+  color: #37012a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.1rem -4rem 0 -4rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+.res {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  color: #37012a;
+  font-weight: bold;
+}
+.res-btn {
+  width: 9em;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 20px;
+  border: solid 0.4px;
+  background-color: #37012a;
+  border-radius: 2em;
+  cursor: pointer;
+  padding: 0.6em;
+}
+.learn-img {
+  display: flex;
+  width: 15%;
+  border-radius: 50%;
+  margin: auto;
+}
+.res-text {
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+/* reasons to join start */
+.res-group {
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+.res-row {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.res-col {
+  color: #fff;
+  flex-basis: 32%;
+  background: #37012a;
+  border-radius: 10px;
+  padding: 20px 12px;
+  margin: -3rem 2rem 3rem 2rem;
+  box-sizing: border-box;
+}
+.res-des {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  font-style: oblique;
+}
+/* reasons to join end */
+
+/* video section */
+.video-section {
+  background-color: #744569;
+  padding: 4rem 4rem 4rem 4rem;
+  display: flex;
+  margin: 2% 10% 8% 10%;
+  border-radius: 3rem;
+}
+.video-section > .video-sub {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin: auto;
+}
+.vitxt {
+  display: grid;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #fff;
+  padding: 2rem 4rem 2rem 4rem;
+  margin: auto;
+}
+.vihead {
+  display: grid;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: #ffff00;
+  padding: 0rem 4rem 0rem 4rem;
+  margin: auto;
+}
+
+/* end of video section */
+
+/* .video-sub{
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+} */
+
+/* Process to start */
+.start {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  color: #37012a;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.btn-filter {
+  display: flex;
+  margin: 3rem auto;
+  justify-content: space-evenly;
+}
+.btn-test {
+  cursor: pointer;
+  color: #37012a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.btn-test:active {
+  color: #ffff00;
+}
+.btn-plan {
+  cursor: pointer;
+  color: #37012a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.btn-record {
+  cursor: pointer;
+  color: #37012a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.btn-launch {
+  cursor: pointer;
+  color: #37012a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  margin: 3% 10% 3% 10%;
+}
+.filter > .filter-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* margin: 2rem; */
+}
+
+.filter > .filter-text p {
+  font-size: 1.3rem;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  float: left;
+  color: #37012a;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5em;
+  /* margin-left: 2.2rem; */
+  padding: 0 6rem 0 2rem;
+  margin: auto;
+}
+
+.filter-img {
+  max-width: 100%;
+  max-height: 100%;
+  /* margin: auto 6rem; */
+}
+.filter-btn {
+  width: 9em;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  color: #fff000;
+  font-size: 20px;
+  border: solid 0.4px;
+  background-color: #37012a;
+  border-radius: 2em;
+  cursor: pointer;
+  padding: 0.6em;
+  margin: auto 0px 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Tutor.css */
+
+.btn-test.active,
+.btn-plan.active,
+.btn-record.active,
+.btn-launch.active {
+  color: gold;
+  font-weight: bold;
+}
+
+/* got section */
+.got-section {
+  /* background-color: #8b8b8b; */
+  padding: 1% 10% 5% 10%;
+  background: #f1f0f4;
+  margin: 2rem 0 2rem 0;
+}
+.got-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #000;
+  padding-top: 2rem;
+  /* padding: 0 3rem 0 3rem; */
+}
+
+/* catchy secction */
+.catchy {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding: 12% 10% 12% 10%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+@media screen and (width<1030px) {
+  .res-row {
+    flex-direction: column;
+  }
+  .res-col {
+    margin-bottom: 4rem;
+  }
+  .filter > .filter-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+    width: 100%;
+  }
+  .filter > .filter-text > p {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    color: #37012a;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 0;
+    margin: auto;
+  }
+
+  /* video section */
+  .video-section {
+    padding: 2rem 4rem 2rem 4rem;
+    display: flex;
+    border-radius: 3rem;
+  }
+  .video-section > .video-sub {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1.3em;
+    width: 100%;
+  }
+  .vimg {
+    max-width: 100%;
+    max-height: 100%;
+    /* padding-top: 2rem; */
+  }
+  .vihead {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  .vitxt {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 0;
+    margin-top: 1.2rem;
+  }
+}

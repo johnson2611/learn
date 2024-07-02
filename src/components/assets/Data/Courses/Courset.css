@@ -1,0 +1,115 @@
+/* courseSection style */
+.courseSection {
+  background: #37012a;
+  background-image: url("./../../Images/work.jpg");
+  background-repeat: no-repeat;
+  /* background-position: inherit; */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0rem 8rem 0rem;
+}
+.Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+  width: 45%;
+  padding: 18% 2% 12% 10%;
+}
+.Section > .courseTitle {
+  font-size: 2.5rem;
+  color: #37012a;
+  padding-left: 18%;
+  margin: 2rem -4rem 0 -4rem;
+}
+.Section > .courseText {
+  font-size: 1rem;
+  color: #37012a;
+  margin: -1.7rem -4rem 0 -3rem;
+}
+/* end of courseSection */
+
+/* Categories section on Courses */
+.course {
+  /* width: 80px; */
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  color: #37012a;
+}
+.des {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  font-style: oblique;
+}
+.row {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  color: #fff;
+  flex-basis: 32%;
+  background: #37012a;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 4px 2px grey;
+  /* transition: 0.5s; */
+}
+/* h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+} */
+/* .course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
+} */
+
+.slick-slide {
+  position: relative;
+}
+.slick-slide:hover img {
+  opacity: 3;
+}
+
+/* media screen for beginner, intermediate and advanced */
+
+@media screen and (width<700px) {
+  .Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    width: 70%;
+    padding: 7rem 2rem 7rem 2rem;
+  }
+  .courseSection {
+    background: #37012a;
+    background-image: url("./../../Images/work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem 8rem 0rem;
+  }
+  .Section > .courseTitle {
+    font-size: 2rem;
+    color: #37012a;
+    padding-right: 3%;
+    margin: 2rem -4rem 0 -4rem;
+  }
+  .Section > .courseText {
+    font-size: 1rem;
+    color: #37012a;
+    padding-right: 3%;
+    margin: -1.7rem -4rem 0 -3rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "writeUp": [
+        {
+            "id": 1,
+            "title": "introduction",
+            "content": "This is a good course",
+            "videoLink": "htttps://www.google.com"
+        },
+        {
+            "id": 2,
+            "title": "introduction",
+            "content": "This is a good course",
+            "videoLink": "htttps://www.google.com"
+        },
+        {
+            "id": 3,
+            "title": "introduction",
+            "content": "This is a good course",
+            "videoLink": "htttps://www.google.com"
+        },
+        {
+            "id": 4,
+            "title": "introduction",
+            "content": "This is a good course",
+            "videoLink": "htttps://www.google.com"
+        }
+    ]
+}

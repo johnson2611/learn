@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* .active {
+  background-color:  #7e3262;
+  border-radius: 5px;
+}  */
+.navbar {
+  background-color: #37012a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  line-height: 3vh;
+  display: flex;
+  z-index: 3;
+  text-align: center;
+}
+.mt {
+  color: #ffffff;
+}
+.learn {
+  color: #ffff00;
+}
+.logo {
+  font-size: 27px;
+  margin-right: auto;
+  margin-left: 34px;
+  padding-top: 23px;
+  cursor: pointer;
+}
+
+/* Search field style*/
+.box {
+  align-items: center;
+  padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  background-color: #ffffff;
+  margin: 1rem -19rem 1rem 0;
+}
+.search {
+  /* position: relative; */
+  width: 64px;
+  height: 22px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-weight: lighter;
+  color: transparent;
+  outline: none;
+  border: 0.5px solid #ffffff;
+  transition: width 300ms, background-position 300ms;
+  overflow: hidden;
+  background-size: 40px;
+  background-position: 45% 50%;
+  top: -0.2rem;
+}
+
+.search:focus,
+.search:not(:placeholder-shown) {
+  outline: none;
+  max-width: 300px;
+  width: 100%;
+  cursor: text;
+  color: #000000;
+  outline: none;
+  transition: width 500ms, background-position 300ms;
+  background-color: transparent;
+  background-size: 40px;
+  background-position: 10px 50%;
+  /* border: 0.5px solid #ffff; */
+  /* background: url(search-bold.svg) no-repeat; */
+}
+
+/* end of field style */
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 59%;
+  margin: 21px;
+  padding-left: 56px;
+  float: left;
+  margin-left: 24rem;
+}
+
+.nav-links li {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* img dropdown */
+/* .dropdown-toggle{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: auto;
+  justify-items: center;
+}
+.dropdown-menu{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-item{
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+} */
+/* end of img dropdown */
+
+.btn {
+  /* margin-left: auto; */
+  border: 0.5px solid #ffffff;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  width: max-content;
+  padding: 0px 10px;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+/* @media screen and (width<675px) */
+@media screen and (width < 700px) {
+  .navbar {
+    background-color: #37012a;
+    z-index: 3;
+  }
+  .nav-links {
+    display: none;
+  }
+  .logo {
+    font-size: 27px;
+    margin-right: auto;
+    margin-left: 12px;
+    padding-top: 23px;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 0;
+    top: 100%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: #4d0f3d;
+    padding-bottom: 2rem;
+  }
+  .active {
+    background-color: yellow;
+    border-radius: 8px;
+  }
+  .btn {
+    margin: 22px;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 0 10px;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  ul li {
+    text-transform: uppercase;
+    padding: 18px;
+    width: 100%;
+    word-spacing: 72%;
+    /* line-height: 23%; */
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    /* background-color: rgb(95, 16, 16); */
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 23px;
+  }
+
+  /* style for search */
+  .box {
+    align-items: center;
+    /* margin-left: 12rem; */
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    width: 40%;
+    background-color: #ffffff;
+    margin: 0.8rem 4rem 2rem 0rem;
+  }
+  .search {
+    width: 94px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: lighter;
+    color: transparent;
+    outline: none;
+    border: 0.5px solid #f1efef;
+    overflow: hidden;
+    background-size: 40px;
+    background-position: 45% 50%;
+    top: -0.2rem;
+  }
+
+  .search:focus,
+  .search:not(:placeholder-shown) {
+    outline: none;
+    max-width: 300px;
+    width: 80%;
+    cursor: text;
+    color: #000000;
+    transition: width 500ms, background-position 300ms;
+    background-color: transparent;
+    background-size: 40px;
+    background-position: 10px 50%;
+  }
+
+  /* end of style search  */
+}
+
+/* media screen for Ipad mini screen and Ipad air screen  */
+@media screen and (min-device-width: 760px) and (max-device-width: 820px) {
+  .navbar {
+    background-color: #37012a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    line-height: 3vh;
+    /* display: none; */
+    z-index: 1;
+    text-align: center;
+  }
+  .mt {
+    color: #ffffff;
+  }
+  .learn {
+    color: #ffff00;
+  }
+  .logo {
+    font-size: 27px;
+    margin-right: auto;
+    margin-left: 34px;
+    padding-top: 23px;
+  }
+
+  /* Search field style*/
+  /* .box {
+    display: none;
+  } */
+  .box {
+    align-items: center;
+    padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    margin: 1rem -4rem 1rem 0;
+  }
+  .search {
+    /* position: relative; */
+    width: 64px;
+    height: 22px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: lighter;
+    color: transparent;
+    outline: none;
+    border: 0.5px solid #ffffff;
+    transition: width 300ms, background-position 300ms;
+    overflow: hidden;
+    background-size: 40px;
+    background-position: 45% 50%;
+    top: -0.2rem;
+  }
+
+  /* end of field style */
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 59%;
+    margin: 21px;
+    padding-left: 1px;
+    /* float: left; */
+    margin-left: 7rem;
+  }
+  .nav-links li {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 0.3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background: none;
+    font-size: 20px;
+  }
+  .btn {
+    /* margin-left: auto; */
+    border: 0.5px solid #ffffff;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    width: max-content;
+    padding: 0px 10px;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+
+/* media scrren for surface pro screen */
+@media screen and (width: 1024px) {
+  .navbar {
+    background-color: #37012a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    line-height: 3vh;
+    z-index: 1;
+    text-align: center;
+  }
+  .mt {
+    color: #ffffff;
+  }
+  .learn {
+    color: #ffff00;
+  }
+  .logo {
+    font-size: 27px;
+    margin-right: auto;
+    margin-left: 34px;
+    padding-top: 23px;
+  }
+
+  /* Search field style*/
+  .box {
+    align-items: center;
+    padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    margin: 1rem -8rem 1rem 0;
+  }
+  .search {
+    /* position: relative; */
+    width: 64px;
+    height: 22px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: lighter;
+    color: transparent;
+    outline: none;
+    border: 0.5px solid #ffffff;
+    transition: width 300ms, background-position 300ms;
+    overflow: hidden;
+    background-size: 40px;
+    background-position: 45% 50%;
+    top: -0.2rem;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 59%;
+    margin: 21px;
+    padding-left: 3rem;
+    margin-left: 7rem;
+  }
+  .nav-links li {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 0.3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background: none;
+    font-size: 20px;
+  }
+  .btn {
+    border: 0.5px solid #ffffff;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    width: max-content;
+    padding: 0px 10px;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  /* end of field style */
+}
+
+/* media screen for surface pro size */
+@media screen and (width: 912px) {
+  .navbar {
+    background-color: #37012a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    line-height: 3vh;
+    z-index: 1;
+    text-align: center;
+  }
+  .mt {
+    color: #ffffff;
+  }
+  .learn {
+    color: #ffff00;
+  }
+  .logo {
+    font-size: 27px;
+    margin-right: auto;
+    margin-left: 34px;
+    padding-top: 23px;
+  }
+
+  /* Search field style*/
+  .box {
+    align-items: center;
+    padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    margin: 1rem -8rem 1rem 0;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 59%;
+    margin: 21px;
+    padding-left: 3rem;
+    margin-left: 7rem;
+  }
+  .nav-links li {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 0.3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background: none;
+    font-size: 20px;
+  }
+  .btn {
+    border: 0.5px solid #ffffff;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    width: max-content;
+    padding: 0px 10px;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

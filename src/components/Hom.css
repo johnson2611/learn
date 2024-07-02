@@ -1,0 +1,26 @@
+.home_image{
+    width: 65%;
+    z-index: -1;
+    margin: auto;
+    margin-top: 70px;
+    /* margin-top: -11px; */
+    height: 300px;
+    padding-left: 8px;
+    
+}
+/* .home_row{
+    display: flex;
+} */
+.title{
+    padding-left:6%;
+    font-weight: bolder;
+    font-size: larger;
+    color: #fff;
+}
+@media screen and (max-width: 760px){
+    .home_image{
+    width: 100%;
+    margin-top: 70px;
+        /* height: 300px; */
+    }
+  }

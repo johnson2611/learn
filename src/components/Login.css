@@ -1,0 +1,105 @@
+* {
+  font-family: "poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.App-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #37012a;
+}
+
+.card {
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 2px solid #f6f6f6;
+  overflow: hidden;
+  margin: 0 0.5rem;
+  margin-top: 9rem;
+}
+
+.card-header {
+  border-bottom: 1px solid #f6f6f6;
+  padding: 1.4rem 1.2rem;
+  background-color: #fbfbfb;
+}
+
+.login_title_1 {
+  font-size: 1rem;
+  text-align: right;
+  font-weight: bold;
+  color: #37012a;
+  /* margin: 0; */
+  margin: -1rem 0 1rem 0;
+  display: inline;
+  float: left;
+}
+.sign_title_2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #37012a;
+  margin: -1rem 0 1rem 0;
+  display: inline;
+  float: right;
+  cursor: pointer;
+}
+.label {
+  font-size: 0.8rem;
+  color: #343434;
+  margin: 0 0 0.3rem 0;
+  margin-top: 1rem;
+}
+
+.card-body {
+  padding: 0rem 1.2rem 1rem 1.2rem;
+}
+.input {
+  width: 16rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08rem;
+  padding: 0.6rem 0.8rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid #37012a;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #37012a;
+}
+
+input:focus {
+  outline: none;
+}
+.pwd{
+  padding-left: 9rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  /* outline: #37012a; */
+}
+
+.form_btn {
+  width: 94%;
+  display: inline;
+  background-color: #37012a;
+  border-radius: 0.7rem;
+  padding: 10px 10px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.error-message {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: red;
+  margin-top: 0.2rem;
+}

@@ -1,0 +1,65 @@
+.profile-pic{
+    width: 30%;
+    border-radius: 50%;
+    position:absolute;
+    max-height: 60%;
+    left: 63%;
+    top: 25%;
+    z-index: 0;
+}
+.btn{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:monospace;
+    border: 19px;
+    background-color: rgb(149, 108, 216);
+    border-radius: 6px;
+    padding: 1px 2px 4px 5px;
+    cursor: pointer;
+}
+.btn1{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:monospace;
+    border: 19px;
+    background-color: rgb(149, 108, 216);
+    border-radius: 6px;
+    padding: 1px 2px 4px 5px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+/* .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  section {
+    height: 100vh;
+    padding: 3em;
+    color: #fff;
+  }
+  
+  section:nth-of-type(1) {
+    background: red;
+  }
+  
+  section:nth-of-type(2) {
+    background: green;
+  }
+  
+  section:nth-of-type(3) {
+    background: blue;
+  }
+  
+  a {
+    display: inline-block;
+    margin: 2em 0;
+    padding: 0 2em;
+  }
+  
+  .selected {
+    color: purple;
+    font-weight: 900;
+  }
+   */
