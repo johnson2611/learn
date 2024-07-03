@@ -1,12 +1,11 @@
 import React from "react";
+import LazyLoad from "react-lazy-load";
 import { useHistory } from "react-router-dom";
 import "./Home.css";
 import mt from "./assets/Images/mt.png";
 import Carousel from "./testifyCarousel";
 import Typewriter from "../Type";
 import { TypeAnimation } from "react-type-animation";
-
-
 
 // Data
 import { categoriesData } from "./assets/Data/categoriesData";
@@ -29,17 +28,16 @@ const Home = () => {
           <div className="section1">
             <div className="title">
               <TypeAnimation
-                  sequence={[
-                    "Fastest and Easiest way", 
-                    1000, // Waits 1s
-                    "to learn online.", 
-                    1000, // Waits 1s
-                    "Start your Learning today",
-                   
-                  ]}
-                  cursor={true}
-                  repeat={Infinity}
-                />
+                sequence={[
+                  "Fastest and Easiest way",
+                  1000, // Waits 1s
+                  "to learn online.",
+                  1000, // Waits 1s
+                  "Start your Learning today",
+                ]}
+                cursor={true}
+                repeat={Infinity}
+              />
             </div>
             <div className="title">
               {/* <span className="way" style={{ color: "#ffff00" }}>
@@ -67,7 +65,9 @@ const Home = () => {
         </div>
         <div className="pace">
           <div className="paceText">
-            <img src={mt} alt="img" className="mt" />
+            <LazyLoad>
+              <img src={mt} alt="img" className="mt" />
+            </LazyLoad>
             <p>
               Learning at your own pace and convenience is what we give to our
               students. you can't afford to miss the packages we have for you.
