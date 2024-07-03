@@ -5,8 +5,7 @@ import axios from 'axios';
 const VideoList = () => {
   const [videos, setVideos] = useState([]);
 
-  useEffect(() => {
-    const apiKey = 'AIzaSyBVdMqKGSgwtMPPPXanTaMn0mIZEK3SNCo'; 
+  useEffect(() => { 
     const channelId = 'UC_x5XG1OV2P6uZZ5FSM9Ttw'; // Replace with the channel ID you want to fetch videos from
 
     // Fetch videos from the YouTube API
