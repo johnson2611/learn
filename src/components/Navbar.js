@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import useOnclickOutside from "react-cool-onclickoutside";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useHistory } from "react-router-dom";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import { AiOutlineSearch } from "react-icons/ai";
+// import { AiOutlineSearch } from "react-icons/ai";
 // import avatar from "./assets/Images/avatar.jpg";
 
 const Navbar = ({ handleClick }) => {
@@ -22,6 +25,15 @@ const Navbar = ({ handleClick }) => {
   // const toggleShowAll = () => {
   //   setImageDrop(!imageDrop);
   // };
+
+  const [search, setSearch] = useState();
+  const toggle = () => {
+    setSearch(true);
+  };
+  const closeSearch = () => (search === true ? setSearch(false) : null);
+  const ref = useOnclickOutside(() => {
+    closeSearch();
+  });
 
   const history = useHistory();
   const homeButtonClick = () => {
@@ -49,16 +61,64 @@ const Navbar = ({ handleClick }) => {
       icons={{ checked: "🌙", unchecked: "🔆" }}
       aria-label="Dark mode toggle"
     /> */}
+
+      {/* new search */}
       <div class="box">
-        {/* search icon */}
-        <AiOutlineSearch className="scr" />
-        <input
-          className="search"
-          placeholder="search..."
-          spellcheck="true"
-          type="text"
-        />
+        <div className="my-auto" ref={ref}>
+          {" "}
+          <div
+            className={
+              search === false
+                ? "searchbar fadeOutWidth"
+                : search === true
+                ? "searchbar fadeInWidth"
+                : "searchbar"
+            }
+          >
+            {" "}
+            {search === true && (
+              <input
+                ref={ref}
+                className={
+                  search === true
+                    ? "search-input fadeIn"
+                    : search === false
+                    ? "search-input fadeOut"
+                    : "search-input"
+                }
+                type="text"
+                name=""
+                placeholder="Search..."
+              />
+            )}{" "}
+            <div
+              className={
+                search === true
+                  ? "icon-bg fadeOut"
+                  : search === false
+                  ? "icon-bg fadeIn"
+                  : "icon-bg"
+              }
+            >
+              {" "}
+              {search !== true && (
+                <FontAwesomeIcon
+                  onClick={toggle}
+                  className={
+                    search === true
+                      ? "search-icon fadeOut"
+                      : search === false
+                      ? "search-icon fadeIn"
+                      : "search-icon"
+                  }
+                  icon={faSearch}
+                />
+              )}{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>
       </div>
+      {/* end o new search */}
 
       <ul
         className={
@@ -119,6 +179,3 @@ const Navbar = ({ handleClick }) => {
   );
 };
 export default Navbar;
-
-
-
