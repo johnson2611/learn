@@ -168,9 +168,9 @@ const Navbar = ({ handleClick }) => {
             )}
             
             </div> */}
-        <button className="btn" onClick={logButtonClick}>
-          Log In{" "}
-        </button>
+            <button className="btn" onClick={logButtonClick}>
+              Log In
+            </button>  
       </ul>
       <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>
         {Mobile ? <ImCross /> : <FaBars />}

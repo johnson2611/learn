@@ -60,7 +60,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  /* filter:brightness(80%); */
+  filter: opacity(100%);
   /* padding: 2rem 1rem 3rem 0rem; */
 }
 /* end of dev section */

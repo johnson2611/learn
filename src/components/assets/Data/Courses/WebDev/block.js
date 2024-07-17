@@ -25,8 +25,8 @@ const Block = () => {
     <div className="ty">
       <div className="bloSection">
         <div className="Section">
-          <div className="courseTitle" style={{color: "#fff000"}}>BlockChain</div>
-          <div className="courseText"  style={{ color: "#fff000", paddingTop: "0.7rem", paddingLeft: "2rem", fontWeight:"bold" }}>
+          <div className="courseTitle" style={{color: "#fff"}}>BlockChain</div>
+          <div className="courseText"  style={{ color: "#37012a", paddingTop: "0.7rem", paddingLeft: "2rem", fontWeight:"bold" }}>
             Learn from our best tutors around the world without limits.
           </div>
         </div>
