@@ -45,11 +45,11 @@ const Home = () => {
               </span> */}
             </div>
             <div className="text" style={{ color: "#ffff00" }}>
-              <Typewriter
+             <Typewriter
                 text="Learn from our best tutors around the world in the easiest way"
                 delay={200}
               />
-              .
+              . 
             </div>
             <div
               className="btn"
